@@ -38,6 +38,8 @@ public class HelloWorld {
         System.out.println("Наибольшее число: " + max);
 
         System.out.println("This is the main branch!");
+        System.out.println("Some temporary changes!");
+        System.out.println("Fixing a bug!");
         scanner.close();
     }
 }
