@@ -1,13 +1,38 @@
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.nio.charset.StandardCharsets;public class HelloWorld {
+import java.util.Scanner;
+
+public class HelloWorld {
     public static void main(String[] args) {
-        String text = "Привет, мир!, Hello Vitaly!";
-        try (OutputStreamWriter writer = new OutputStreamWriter(System.out, StandardCharsets.UTF_8)) {
-            writer.write(text);
-            writer.flush(); // Убедимся, что всё записано
-        } catch (IOException e) {
-            e.printStackTrace();
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Введите первое число: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Введите второе число: ");
+        int num2 = scanner.nextInt();
+
+        System.out.print("Введите третье число: ");
+        int num3 = scanner.nextInt();
+
+
+        int max = num1;
+
+
+        if (num2 > max) {
+            max = num2;
         }
+
+        if (num3 > max) {
+            max = num3;
+        }
+
+
+
+
+        System.out.println("Наибольшее число: " + max);
+
+
+        scanner.close();
     }
 }
