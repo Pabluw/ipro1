@@ -39,7 +39,8 @@ public class HelloWorld {
 
         System.out.println("This is the main branch!");
         System.out.println("Some temporary changes!");
-        System.out.println("Fixing a bug!");
+        System.out.println("Fixing a bug 5a90ba7cb0d8e9978b1c9c751f3b6da5ed611007!");
+
         scanner.close();
     }
 }
